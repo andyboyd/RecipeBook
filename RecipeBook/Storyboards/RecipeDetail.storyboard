@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dG5-dN-vcO">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="NTa-lV-fwT">
+            <objects>
+                <viewController id="dG5-dN-vcO" customClass="RecipeDetailViewController" customModule="RecipeBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KEB-hG-3cU"/>
+                        <viewControllerLayoutGuide type="bottom" id="wOi-nf-QNg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kfd-mV-6Dg">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nti-DX-wtz">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-X0-ebN">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="295.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Recipe Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIU-kU-fAl">
+                                                <rect key="frame" x="275" y="20" width="117" height="23.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="eks-M2-pKa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" image="placeholder_large" translatesAutoresizingMaskIntoConstraints="NO" id="ZNT-3O-g9Z">
+                                                <rect key="frame" x="269.5" y="55.5" width="128" height="128"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="FG7-aB-JrJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-8n-cpR">
+                                                <rect key="frame" x="289.5" y="203.5" width="88" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="nR9-RI-0Ps"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQK-EC-3gp">
+                                                <rect key="frame" x="28" y="243.5" width="611" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="IqJ-HV-JNr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                                <state key="normal" title="View Recipe">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="viewRecipeButtonTapped:" destination="dG5-dN-vcO" eventType="touchUpInside" id="Lo4-nN-9mz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Bqb-8n-cpR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XMt-X0-ebN" secondAttribute="leadingMargin" constant="20" id="0UR-XK-oJZ"/>
+                                            <constraint firstItem="dQK-EC-3gp" firstAttribute="leading" secondItem="XMt-X0-ebN" secondAttribute="leadingMargin" constant="20" id="74T-SF-OrW"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Bqb-8n-cpR" secondAttribute="trailing" constant="20" id="Be5-Ke-Kwz"/>
+                                            <constraint firstItem="mIU-kU-fAl" firstAttribute="top" secondItem="XMt-X0-ebN" secondAttribute="top" constant="20" id="FwR-YR-h4l"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mIU-kU-fAl" secondAttribute="trailing" priority="999" constant="20" id="Gg5-fH-HUt"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dQK-EC-3gp" secondAttribute="trailing" constant="20" id="Gt7-dU-Hcx"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ZNT-3O-g9Z" secondAttribute="trailing" constant="20" id="N4r-Zf-9XI"/>
+                                            <constraint firstItem="ZNT-3O-g9Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XMt-X0-ebN" secondAttribute="leadingMargin" constant="20" id="X4a-2u-CVH"/>
+                                            <constraint firstItem="Bqb-8n-cpR" firstAttribute="top" secondItem="ZNT-3O-g9Z" secondAttribute="bottom" constant="20" id="Zgq-E1-LQr"/>
+                                            <constraint firstItem="mIU-kU-fAl" firstAttribute="centerX" secondItem="XMt-X0-ebN" secondAttribute="centerX" id="cnl-0l-RhB"/>
+                                            <constraint firstItem="ZNT-3O-g9Z" firstAttribute="centerX" secondItem="XMt-X0-ebN" secondAttribute="centerX" id="gX8-zP-GQA"/>
+                                            <constraint firstItem="mIU-kU-fAl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XMt-X0-ebN" secondAttribute="leading" priority="999" constant="20" id="ja2-qT-4YM"/>
+                                            <constraint firstItem="dQK-EC-3gp" firstAttribute="top" secondItem="Bqb-8n-cpR" secondAttribute="bottom" constant="20" id="jkd-Bq-Q6Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="dQK-EC-3gp" secondAttribute="bottom" constant="8" id="par-gj-FSx"/>
+                                            <constraint firstItem="Bqb-8n-cpR" firstAttribute="centerX" secondItem="XMt-X0-ebN" secondAttribute="centerX" id="qTh-6n-Ddo"/>
+                                            <constraint firstItem="ZNT-3O-g9Z" firstAttribute="top" secondItem="mIU-kU-fAl" secondAttribute="bottom" constant="12" id="tjd-e3-oFg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XMt-X0-ebN" firstAttribute="top" secondItem="nti-DX-wtz" secondAttribute="top" id="5Ji-O1-rAh"/>
+                                    <constraint firstAttribute="trailing" secondItem="XMt-X0-ebN" secondAttribute="trailing" id="6eo-Uf-qhV"/>
+                                    <constraint firstItem="XMt-X0-ebN" firstAttribute="leading" secondItem="nti-DX-wtz" secondAttribute="leading" id="9BB-fi-Mn7"/>
+                                    <constraint firstAttribute="bottom" secondItem="XMt-X0-ebN" secondAttribute="bottom" id="D12-kf-uNt"/>
+                                    <constraint firstItem="XMt-X0-ebN" firstAttribute="width" secondItem="nti-DX-wtz" secondAttribute="width" id="Juw-Mo-5gh"/>
+                                    <constraint firstItem="XMt-X0-ebN" firstAttribute="centerX" secondItem="nti-DX-wtz" secondAttribute="centerX" id="ZaX-vX-zdD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nti-DX-wtz" secondAttribute="trailing" id="3oq-CZ-qxr"/>
+                            <constraint firstItem="nti-DX-wtz" firstAttribute="leading" secondItem="kfd-mV-6Dg" secondAttribute="leading" id="Y8n-RF-itu"/>
+                            <constraint firstAttribute="bottom" secondItem="nti-DX-wtz" secondAttribute="bottom" id="egK-Np-b8C"/>
+                            <constraint firstItem="nti-DX-wtz" firstAttribute="top" secondItem="kfd-mV-6Dg" secondAttribute="top" id="wsi-hg-e6A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ingredientsLabel" destination="Bqb-8n-cpR" id="Z21-WL-tbJ"/>
+                        <outlet property="recipeImageView" destination="ZNT-3O-g9Z" id="ifd-Rl-X5c"/>
+                        <outlet property="recipeNameLabel" destination="mIU-kU-fAl" id="FUU-VL-QtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="De7-v6-z9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder_large" width="128" height="128"/>
+    </resources>
+</document>
