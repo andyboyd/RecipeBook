@@ -44,7 +44,7 @@
 		275596151F56C60F00D41BD6 /* RecipeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeDetail.storyboard; sourceTree = "<group>"; };
 		275596171F56CB3900D41BD6 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		2755961A1F56DA2F00D41BD6 /* UIImage+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Download.swift"; sourceTree = "<group>"; };
-		275596341F56DEDE00D41BD6 /* HTMLdecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLdecode.swift; path = ../../../../Downloads/HTMLdecode.swift; sourceTree = "<group>"; };
+		275596341F56DEDE00D41BD6 /* HTMLdecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLdecode.swift; sourceTree = "<group>"; };
 		275596361F56F7EF00D41BD6 /* RecipeBookRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBookRouterTests.swift; sourceTree = "<group>"; };
 		275596381F56FB6200D41BD6 /* RecipeListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListPresenterTests.swift; sourceTree = "<group>"; };
 		2755963A1F57033400D41BD6 /* RecipeListItemDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListItemDataModelTests.swift; sourceTree = "<group>"; };
